@@ -1,0 +1,11 @@
+HELP.ad
+build/
+!**/src/main/**
+!**/src/test/**
+
+.idea
+*.iws
+*.iml
+*.ipr
+
+.gradle
