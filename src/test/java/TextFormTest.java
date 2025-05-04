@@ -39,21 +39,7 @@ public class TextFormTest {
         $("#react-select-3-input").setValue("Rajasthan").pressEnter();
         $("#city").click();
         $("#react-select-4-input").setValue("Jaipur").pressEnter();
-
-//        $("#submit").click();
-//        $$(".table-responsive").findBy(text("Student Name")).shouldHave(text("Kirill Filimonov"));
-//        $$(".table-responsive").findBy(text("Student Email")).shouldHave(text("fil@gmail.ru"));
-//        $$(".table-responsive").findBy(text("Gender")).shouldHave(text("Male"));
-//        $$(".table-responsive").findBy(text("Mobile")).shouldHave(text("1234567890"));
-//        $$(".table-responsive").findBy(text("Date of Birth")).shouldHave(text("25 May,2025"));
-//        $$(".table-responsive").findBy(text("Subjects")).shouldHave(text("Accounting"));
-//        $$(".table-responsive").findBy(text("Hobbies")).shouldHave(text("Sports"));
-//        $$(".table-responsive").findBy(text("Picture")).shouldHave(text("bird.jpg"));
-//        $$(".table-responsive").findBy(text("Address")).shouldHave(text("ryazan"));
-//        $$(".table-responsive").findBy(text("State and City")).shouldHave(text("Rajasthan Jaipur"));
-
         $("#submit").click();
-        //$$("table tr").findBy(text("Label")).shouldHave(text("Values"));
         $$("table tr").findBy(text("Student Name")).shouldHave(text("Kirill Filimonov"));
         $$("table tr").findBy(text("Student Email")).shouldHave(text("fil@gmail.ru"));
         $$("table tr").findBy(text("Gender")).shouldHave(text("Male"));
