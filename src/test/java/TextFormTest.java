@@ -14,13 +14,14 @@ public class TextFormTest {
         Configuration.browserSize = "1920x1080"; //задаю разрешение браузеру
         Configuration.baseUrl = "https://demoqa.com"; //указываю куда подключаться
         Configuration.pageLoadStrategy = "eager"; //не ждём полной загрузки странички
-        Configuration.holdBrowserOpen = true; //держим браузер открытым после выполнения теста=помогает разглядеть результат
-        Configuration.timeout = 5000; //задержка в 5 секунд
+
     }
 
     @Test
-    void fillForm() {
+    void fillFormTest() {
         open("/automation-practice-form");
+        executeJavaScript("$('#fixedban').remove()");
+        executeJavaScript("$('footer').remove()");
         $("#firstName").setValue("Kirill");
         $("#lastName").setValue("Filimonov");
         $("#userEmail").setValue("fil@gmail.ru");
