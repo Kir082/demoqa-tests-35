@@ -13,7 +13,7 @@ public class TextFormTest {
     static void beforeAll() {
         Configuration.browserSize = "1920x1080"; //задаю разрешение браузеру
         Configuration.baseUrl = "https://demoqa.com"; //указываю куда подключаться
-        Configuration.pageLoadStrategy = "eager"; //не ждём полной загрузки странички
+        Configuration.pageLoadStrategy = "eager"; //не ждём полной загрузки страничк
 
     }
 
