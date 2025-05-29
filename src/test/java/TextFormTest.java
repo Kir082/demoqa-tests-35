@@ -11,9 +11,9 @@ import static com.codeborne.selenide.Selenide.executeJavaScript;
 public class TextFormTest {
     @BeforeAll
     static void beforeAll() {
-        Configuration.browserSize = "1920x1080"; //задаю разрешение браузеру
-        Configuration.baseUrl = "https://demoqa.com"; //указываю куда подключаться
-        Configuration.pageLoadStrategy = "eager"; //не ждём полной загрузки страничк
+        Configuration.browserSize = "1920x1080";
+        Configuration.baseUrl = "https://demoqa.com";
+        Configuration.pageLoadStrategy = "eager";
 
     }
 
@@ -31,9 +31,9 @@ public class TextFormTest {
         $(".react-datepicker__year-select").selectOption("2025");
         $(".react-datepicker__month-select").selectOption("May");
         $$(".react-datepicker__day").findBy(text("25")).click();
-        $("#subjectsInput").setValue("Accounting").pressEnter(); //выбираю из списка
+        $("#subjectsInput").setValue("Accounting").pressEnter();
         $("#hobbiesWrapper").$(byText("Sports")).click();
-        $("#uploadPicture").uploadFromClasspath("bird.jpg"); //класть в папку с тестом внутри ресурса
+        $("#uploadPicture").uploadFromClasspath("bird.jpg");
         $("#currentAddress").setValue("ryazan");
         executeJavaScript("arguments[0].scrollIntoView(true);", $("#state"));
         $("#state").click();
